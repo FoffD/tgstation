@@ -19,6 +19,7 @@
 #define DEAFMUT /datum/mutation/human/deaf
 #define DWARFISM /datum/mutation/human/dwarfism
 #define ELVIS /datum/mutation/human/elvis
+#define EMSIGHT /datum/mutation/human/emsight
 #define EPILEPSY /datum/mutation/human/epilepsy
 #define EXTRASTUN /datum/mutation/human/extrastun
 #define FIREBREATH /datum/mutation/human/firebreath
