@@ -122,6 +122,25 @@
 	REMOVE_TRAIT(owner, TRAIT_XRAY_VISION, GENETIC_MUTATION)
 	owner.update_sight()
 
+///EM Sight lets you see electrical fields, which are produced by living organic and electronic beings, and anything conducting electricity
+/datum/mutation/human/emsight
+	name = "EM Sight"
+	desc = "The user can detect electromagnetic fields, and can identify what they are by the field's shape"
+	text_gain_indication = "<span class='notice'>You suddenly feel surrounded by buzzing shapes</span>"
+	instability = 35
+	locked = TRUE
+
+/datum/mutation/human/emsight/on_acquiring(mob/living/carbon/human/owner)
+	if(..())
+		return
+	ADD_TRAIT(owner, TRAIT_EM_SIGHT, GENETIC_MUTATION)
+	owner.update_sight()
+
+/datum/mutation/human/emsight/on_losing(mob/living/carbon/human/owner)
+	if(..())
+		return
+	REMOVE_TRAIT(owner, TRAIT_EM_SIGHT, GENETIC_MUTATION)
+	owner.update_sight()
 
 ///Laser Eyes lets you shoot lasers from your eyes!
 /datum/mutation/human/laser_eyes
